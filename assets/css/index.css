@@ -82,12 +82,12 @@
     background-color: var(--color-black);
     overflow-x: hidden;
     text-decoration: none;
-    font-family: "DM Sans", sans-serif;
+    font-family: "work sans", sans-serif;
     
   }
 
   button{
-    font-family: "DM Sans", sans-serif;
+    font-family: "work sans", sans-serif;
   }
   
   /*GENERAL STYLES */
@@ -116,7 +116,7 @@
     background-color: var(--color-black);
     color: var(--color-white);
     position: fixed;
-    border: 1px solid white;
+    border: 1px solid transparent;
     height: 90px;
     width: 100%;
     z-index: 150;
@@ -159,26 +159,26 @@
     padding: 10px 25px;
   }
   header ul {
-    border: 1px solid white;
+    border: 1px solid transparent;
   }
   
   header ul li a {
     text-decoration: none;
     color: var(--color-light);
     font-weight: bold;
-    font-weight: 1em;
-    
+    font-weight: 1.5em;
+    text-transform: capitalize;
   }
   
   header ul li a.resume_view {
-    background-color: var(--indigo);
+    background-color: var(--color-primary);
     color: white;
     padding: 10px 30px;
     border-radius: 30px;
   }
   
   header ul li a:hover {
-    background-color: var(--indigo);
+    background-color: var(--color-primary);
     color: white;
     padding: 15px 30px;
     border-radius: 30px;
@@ -309,7 +309,7 @@
   background-color: #101010;
 }
 
-.about-box-container {
+.second-box-container {
   display: flex;
   border: 1px solid transparent;
   margin: 10px;
@@ -319,30 +319,28 @@
   border: 1px solid transparent;
 }
 
-.about-box {
+.second-box {
   margin: 50px;
   width: 50%;
   padding: 30px;
-  border: 1px solid transparent;
+  border: 1px solid red;
 }
 
 .box2 h3 {
   font-size: 1.1em;
   font-weight: bold;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
   display: flex;
-  justify-content: center;
-  margin: 5px;
+  justify-content: start;
   border: 1px solid transparent;
-  width: 30%;
-  padding: 10px 30px;
+  width: 100%;
   border-radius: 30px;
   color: white;
-  font-family: "work sans", sans-serif;
+  
 }
 
-.about-box p {
+.second-box p {
   color: var(--color-white);
   font-weight: light;
   text-indent: 5px;
@@ -351,18 +349,27 @@
   justify-content: center;
   letter-spacing: 0.9px;
   line-height: 25px;
-  margin: 5px;
   font-size: 1em;
-  font-family: "work sans", sans-serif;
+  
+  border: 1px solid red;
 }
 
-.about-box button {
-  margin: 20px 0 0 50px;
+.second-box .button-box{
+  display: flex;
+  justify-content:left;
+  align-items: start;
+  border: 1px solid red;
+  
+}
+
+.second-box button {
+  margin:15px 0 0 -10px;
   border: unset;
   background: unset;
+  gap: 10px;
 }
 
-.about-box a {
+.second-box a {
   background-color: var(--color-primary);
   color: white;
   padding: 10px 30px;
@@ -371,7 +378,7 @@
   margin: 10px;
   text-decoration: none;
 }
-.about-box a:hover {
+.second-box a:hover {
   background-color: unset;
   border: 2px solid var(--color-primary);
   color: var(--color-white);
@@ -384,7 +391,7 @@
 }
 
 
-.about-box-container .image-box img {
+.second-box-container .image-box img {
   margin: 10px;
   width:90%;
   object-fit: cover;
