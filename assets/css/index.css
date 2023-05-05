@@ -209,7 +209,7 @@
   background-repeat: no-repeat;
   background-size:cover;
   background-position:100% 100%;
-  background-attachment: fixed;
+  background-attachment:scroll;
   border: 1px solid red;
   
 }
@@ -415,15 +415,20 @@
 
 /* --------------------------------------------------EVENT BOX-----------------------------------*/
 
-.event-container {
+.roadmap-container {
   padding: 20px 0 100px 0;
-  border: 1px solid transparent;
-  background-color: white;
+  margin-top:90px ;
+  padding: 20px 0 100px 0;
+  background-image: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:100% 100%;
+  background-attachment:scroll;
+  border: 1px solid red;
   margin: 30px 0 0 0;
-  border-radius: 4px;
 }
 
-.event-container h3 {
+.roadmap-container h3 {
   text-align: center;
   color: var(--color-primary);
 }
@@ -451,7 +456,7 @@ p:after {
   flex: 10%;
 }
 
-.event-box {
+.roadmap-box {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -459,7 +464,7 @@ p:after {
   border: 1px solid transparent;
 }
 
-.event-card {
+.roadmap-card {
   height: 170px;
   width: 45%;
   border: 1px solid transparent;
@@ -471,7 +476,7 @@ p:after {
   justify-content: space-between;
 }
 
-.event-first {
+.roadmap-first {
   width: 20%;
   margin: 0 0 0 10px;
   border: 1px solid transparent;
@@ -495,7 +500,7 @@ p:after {
   align-items: center;
 }
 
-.event-first .event-date {
+.roadmap-first .roadmap-date {
   height: 70%;
   width: 100%;
   border: 1px solid transparent;
@@ -508,7 +513,7 @@ p:after {
   font-weight: bold;
 }
 
-.event-first .event-time {
+.roadmap-first .roadmap-time {
   height: 30%;
   width: 100%;
   background-color: var(--color-primary);
@@ -520,18 +525,18 @@ p:after {
   border-radius: 0 0 5px 5px;
 }
 
-.event-second {
+.roadmap-second {
   width: 70%;
   border: 1px solid transparent;
 }
 
-div.event-title {
+div.roadmap-title {
   font-size: 1.2em;
   color: black;
   font-weight: bold;
 }
 
-.event-location {
+.roadmap-location {
   font-size: 1em;
   color: var(--color-primary);
   font-weight: bold;
@@ -539,7 +544,7 @@ div.event-title {
   font-family: "Montserrat", sans-serif;
 }
 
-.event-location i {
+.roadmap-location i {
   color: var(--color-primary);
   font-size: 1.2em;
 }
