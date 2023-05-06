@@ -1,5 +1,5 @@
 :root {
-    --color-dark: #212529;
+    --color-dark:#151515;
     --color-light: #f0eef6;
     --color-gray: #9e98b3;
     --color-primary: #EEB00C;
@@ -79,7 +79,7 @@
   
   body,html{
     color: var(--color-light);
-    background-color: var(--color-black);
+    background-color: var(--color-dark);
     overflow-x: hidden;
     text-decoration: none;
     font-family: "work sans", sans-serif;
@@ -562,10 +562,10 @@
 }
 
 .team-card {
-  height:350px;
+  background-color: var(--color-black);
   width: 45%;
   border: 1px solid transparent;
-  box-shadow: 0 0 10px #cecece;
+  box-shadow: 0 0 10px transparent;
   border-radius: 10px;
   margin: 20px;
   display: flex;
@@ -628,3 +628,36 @@ div.team-title {
   font-size: 1.2em;
 }
 
+
+
+/* --------------------------------------------------FREQUENTLY ASKED QUESTIONS -----------------------------------*/
+
+.faq-container {
+  padding: 20px 0 100px 0;
+  border: 1px solid transparent;
+  background-image: url("../images/bg.png");
+  margin: 30px 0 0 0;
+  border-radius: 4px;
+}
+
+.faq-container h3 {
+  text-align: center;
+  color: var(--color-black);
+}
+
+.faq-card {
+  width: 25%;
+  border: 1px solid transparent;
+  box-shadow: 0 0 10px #cecece;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: flex;
+  padding: 10px;
+  background-color: var(--color-white);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-card p {
+  color: var(--color-black);
+}
