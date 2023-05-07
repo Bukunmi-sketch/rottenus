@@ -5,7 +5,7 @@
     --color-primary: #EEB00C;
     --color-secondary: #d6ccff;
     --color-danger: #fb5151;
-    --color-black: #000;
+    --color-black: #1A1A1B;
     --color-success: #51fb51;
     --color-white: #ffffff;
     --color-fadewhite: #f8f8f8;
@@ -633,7 +633,7 @@ div.team-title {
 /* --------------------------------------------------FREQUENTLY ASKED QUESTIONS -----------------------------------*/
 
 .faq-container {
-  padding: 20px 0 100px 0;
+  padding:50px 0 200px 0;
   border: 1px solid transparent;
   background-image: url("../images/bg.png");
   margin: 30px 0 0 0;
@@ -652,22 +652,175 @@ div.team-title {
   justify-content: center;
   border: 1px solid red;
   width:100%;
-  margin: auto;
+  margin:30px auto;
 }
 
 .faq-card {
   width: 40%;
   border: 1px solid transparent;
   box-shadow: 0 0 10px #cecece;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   margin: 10px 0 0 10px;
   display: flex;
-  padding: 10px;
+  flex-direction: column;
+  padding:20px 10px 20px 10px;
   background-color: var(--color-black);
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+  color: white;
 }
 
-.faq-card p {
-  color: var(--color-black);
+.faq-card-header{
+  display: flex;
+  color: white;
+  border: 1px solid red;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+
+.faq-card-header h3{
+  color: var(--color-primary);
+}
+
+.faq-card-header span{
+  color:white;
+}
+
+.faq-card p{
+  margin:20px 0 0 0;
+}
+
+
+
+/* --------------------------------------------------PARTNET WITHS US ASKED QUESTIONS -----------------------------------*/
+
+.partner-container {
+  padding:50px 0 200px 0;
+  border: 1px solid transparent;
+  background-color: var(--color-black);
+  margin: 30px 0 0 0;
+  border-radius: 4px;
+}
+
+.partner-container h3 {
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.partner-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  width:100%;
+  margin:30px auto;
+}
+
+.partner-card{
+  width:15%;
+  border: 1px solid transparent;
+  border-radius:0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  padding:20px 10px 20px 10px;
+  background-color: #37373F;
+  justify-content: space-between;
+  align-items: start;
+  color: white;
+}
+
+.partner-card-bg-blur {
+  width:15%;
+  border: 1px solid transparent;
+  border-radius:0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  padding:20px 10px 20px 10px;
+  background-color: var(--color-black);
+  justify-content: space-between;
+  align-items: start;
+  color: white;
+}
+
+.partner-card-header{
+  display: flex;
+  color: white;
+  border: 1px solid red;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.partner-card-header h3{
+  color: var(--color-primary);
+}
+
+.partner-card-header span{
+  color:white;
+}
+
+.partner-card p{
+  margin:20px 0 0 0;
+}
+
+
+/* ---------------------------CONTACT ME-----------------*/
+
+.community_container {
+  background-color: #191919;
+  background-image: url("../images/bg.png");
+  background-position:200% 200%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.community_container p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 80%;
+}
+
+.community_container .button-two {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.community_container .button-two:hover {
+  border: 3px solid var(--color-primary);
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: 0.4s;
+  background-color: unset;
+}
+
+
+/* ---------------------------CONTACT ME-----------------*/
+
+footer{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p a{
+  color: white;
+  text-decoration: none;
+}
+
